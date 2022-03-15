@@ -66,14 +66,14 @@ export default {
     loadMatches() {
       axios
         .get(
-          `${import.meta.env.VITE_SERVER}/api/matches?puuid=${
+          `/api/matches?puuid=${
             this.summoner.puuid
           }&region=${this.region(this.summoner.region)}&limit=10`
         )
         .then((res) => {
           axios
             .get(
-              `${import.meta.env.VITE_SERVER}/api/matches/info?matches=${
+              `/api/matches/info?matches=${
                 res.data
               }&region=${this.region(this.summoner.region)}`
             )
