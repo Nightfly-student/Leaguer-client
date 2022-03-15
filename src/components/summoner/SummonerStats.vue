@@ -57,7 +57,6 @@ export default {
       )
       .then((res) => {
         this.stats = res.data;
-        console.log(res.data);
         this.isMounted = true;
       })
       .catch((err) => {

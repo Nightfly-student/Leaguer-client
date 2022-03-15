@@ -44,7 +44,7 @@
         <img
           class="img-champRotation-size"
           :src="
-            'http://ddragon.leagueoflegends.com/cdn/' +
+            'https://ddragon.leagueoflegends.com/cdn/' +
             version +
             '/img/champion/' +
             rg +
