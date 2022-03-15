@@ -83,7 +83,7 @@ export default {
         .then((res) => {
           axios
             .get(
-              `http://ddragon.leagueoflegends.com/cdn/${this.version}/data/en_US/champion.json`
+              `https://ddragon.leagueoflegends.com/cdn/${this.version}/data/en_US/champion.json`
             )
             .then((response) => {
               res.data.regular.forEach((champ) => {
