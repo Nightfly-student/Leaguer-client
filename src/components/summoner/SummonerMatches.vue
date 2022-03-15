@@ -95,14 +95,14 @@ export default {
           this.version = res.data[0];
           axios
             .get(
-              `http://ddragon.leagueoflegends.com/cdn/${res.data[0]}/data/en_US/summoner.json`
+              `https://ddragon.leagueoflegends.com/cdn/${res.data[0]}/data/en_US/summoner.json`
             )
             .then((res) => {
               this.summonerSpells = res.data;
             });
           axios
             .get(
-              `http://ddragon.leagueoflegends.com/cdn/${res.data[0]}/data/en_US/runesReforged.json`
+              `https://ddragon.leagueoflegends.com/cdn/${res.data[0]}/data/en_US/runesReforged.json`
             )
             .then((res) => {
               this.runes = res.data;

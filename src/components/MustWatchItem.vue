@@ -16,7 +16,7 @@
               <img
                 class="must-watch-icon ms-2 center-text-flex"
                 :src="
-                  'http://ddragon.leagueoflegends.com/cdn/' +
+                  'https://ddragon.leagueoflegends.com/cdn/' +
                   version +
                   '/img/profileicon/' +
                   summoner.icon +

@@ -6,7 +6,7 @@
           class="img-size"
           v-if="isMounted"
           :src="
-            'http://ddragon.leagueoflegends.com/cdn/' +
+            'https://ddragon.leagueoflegends.com/cdn/' +
             version +
             '/img/profileicon/' +
             summoner.icon +

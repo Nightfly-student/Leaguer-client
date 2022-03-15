@@ -3,7 +3,7 @@
     <img
       class="img-tiny"
       :src="
-        'http://ddragon.leagueoflegends.com/cdn/' +
+        'https://ddragon.leagueoflegends.com/cdn/' +
         version +
         '/img/champion/' +
         champion +

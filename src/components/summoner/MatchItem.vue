@@ -6,7 +6,7 @@
           <img
             class="img-main"
             :src="
-              'http://ddragon.leagueoflegends.com/cdn/' +
+              'https://ddragon.leagueoflegends.com/cdn/' +
               version +
               '/img/champion/' +
               participant.championName +
@@ -25,7 +25,7 @@
             <img
               class="img-spell"
               :src="
-                'http://ddragon.leagueoflegends.com/cdn/' +
+                'https://ddragon.leagueoflegends.com/cdn/' +
                 version +
                 '/img/spell/' +
                 getSumonnerSpells(participant.summoner1Id).image.full
@@ -34,7 +34,7 @@
             <img
               class="img-spell"
               :src="
-                'http://ddragon.leagueoflegends.com/cdn/' +
+                'https://ddragon.leagueoflegends.com/cdn/' +
                 version +
                 '/img/spell/' +
                 getSumonnerSpells(participant.summoner2Id).image.full
@@ -43,14 +43,14 @@
             <img
               class="img-spell img-rune"
               :src="
-                'http://ddragon.leagueoflegends.com/cdn/img/' +
+                'https://ddragon.leagueoflegends.com/cdn/img/' +
                 getRune(participant.perks.styles[0].style).icon
               "
             />
             <img
               class="img-spell img-rune"
               :src="
-                'http://ddragon.leagueoflegends.com/cdn/img/' +
+                'https://ddragon.leagueoflegends.com/cdn/img/' +
                 getRune(participant.perks.styles[1].style).icon
               "
             />
@@ -102,7 +102,7 @@
                   class="img-item"
                   v-if="participant[`item${n - 1}`] != 0"
                   :src="
-                    'http://ddragon.leagueoflegends.com/cdn/' +
+                    'https://ddragon.leagueoflegends.com/cdn/' +
                     version +
                     '/img/item/' +
                     participant[`item${n - 1}`] +
@@ -120,7 +120,7 @@
                 v-if="participant.item6 != 0"
                 class="img-spell negative-margin-left"
                 :src="
-                  'http://ddragon.leagueoflegends.com/cdn/' +
+                  'https://ddragon.leagueoflegends.com/cdn/' +
                   version +
                   '/img/item/' +
                   participant.item6 +
