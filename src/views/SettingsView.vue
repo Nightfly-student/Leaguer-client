@@ -3,24 +3,29 @@
     <h2 class="pt-4">Settings</h2>
     <nav class="navbar navbar-expand-lg navbar-light">
       <div class="navbar-nav">
-        <a
-          href="#"
-          class="nav-item nav-link p-0 pe-4"
-          :class="{ active: profile }"
-          @click="changeTab('profile')"
-          >profile</a
-        >
-        <a
-          href="#"
-          class="nav-item nav-link p-0 pe-4"
-          :class="{ active: additional }"
-          @click="changeTab('additional')"
-          >advanced settings</a
-        >
+        <ul class="nav nav-tabs">
+          <li class="nav-item">
+            <a
+              class="nav-link pointer"
+              :class="{ active: profile }"
+              @click="changeTab('profile')"
+              aria-current="page"
+              >profile</a
+            >
+          </li>
+          <li class="nav-item">
+            <a
+              class="nav-link pointer"
+              :class="{ active: additional }"
+              @click="changeTab('additional')"
+              >advanced settings</a
+            >
+          </li>
+        </ul>
       </div>
     </nav>
-    <ProfileSettings v-if="profile"/>
-    <AdvancedSettings v-if="additional"/>
+    <ProfileSettings v-if="profile" />
+    <AdvancedSettings v-if="additional" />
   </div>
 </template>
 

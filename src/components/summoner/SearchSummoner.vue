@@ -8,7 +8,7 @@
             v-model="summoner.summonerName"
             @keyup.enter="search(summoner)"
             type="text"
-            class="input-text d-inline m-auto"
+            class="input-text d-inline m-auto mobile-width-100"
             placeholder="Search for your lol account..."
           />
           <select
@@ -89,6 +89,9 @@ input {
 @media (max-width: 921px) {
   input {
     width: 80%;
+  }
+  .mobile-width-100 {
+    width: 100%;
   }
 }
 </style>

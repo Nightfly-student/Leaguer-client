@@ -1,34 +1,36 @@
 <template>
-  <div>
+  <div v-if="!noAuth">
     <h2 class="fs-4">Add Summoner</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">Summoner Name</th>
-          <th scope="col">Region</th>
-          <th scope="col">Options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="summoner in summoners" :key="summoner._id">
-          <td>{{ summoner.name }}</td>
-          <td>{{ summoner.region }}</td>
-          <td>
-            <button
-              @click="deleteSummoner(summoner._id)"
-              class="btn btn-danger"
-            >
-              Delete
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">Summoner Name</th>
+            <th scope="col">Region</th>
+            <th scope="col">Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="summoner in summoners" :key="summoner._id">
+            <td>{{ summoner.name }}</td>
+            <td>{{ summoner.region }}</td>
+            <td>
+              <button
+                @click="deleteSummoner(summoner._id)"
+                class="btn btn-danger"
+              >
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
     <input
       v-model="sum.summonerName"
       placeholder="Summoner Name"
       type="text"
-      class="styling-admin-add"
+      class="styling-admin-add w-60"
     />
     <select
       v-model="sum.region"
@@ -68,6 +70,7 @@ export default {
         summonerName: "",
         region: "euw1",
       },
+      noAuth: true,
     };
   },
   methods: {
@@ -130,8 +133,10 @@ export default {
       .get("/api/summoners/list", { headers: authHeader() })
       .then((res) => {
         this.summoners = res.data;
+        this.noAuth = false;
       })
       .catch((err) => {
+        this.noAuth = true;
         console.warn(err.response.data.message);
       });
   },

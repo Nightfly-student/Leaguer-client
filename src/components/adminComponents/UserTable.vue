@@ -1,35 +1,37 @@
 <template>
   <div v-if="!noAuth">
     <h2 class="pt-4 fs-4">All Users</h2>
-    <table class="table">
-      <thead>
-        <tr>
-          <th scope="col">#</th>
-          <th scope="col">Username</th>
-          <th scope="col">Email</th>
-          <th scope="col">Admin</th>
-          <th scope="col">Options</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr v-for="user in users" :key="user._id">
-          <th scope="row">{{ user._id }}</th>
-          <td>{{ user.name }}</td>
-          <td>{{ user.email }}</td>
-          <td>
-            <select @change="updateRole(user._id)" v-model="user.isAdmin">
-              <option value="true">true</option>
-              <option value="false">false</option>
-            </select>
-          </td>
-          <td>
-            <button @click="deleteUser(user._id)" class="btn btn-danger">
-              Delete
-            </button>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+    <div class="table-responsive">
+      <table class="table">
+        <thead>
+          <tr>
+            <th scope="col">#</th>
+            <th scope="col">Username</th>
+            <th scope="col">Email</th>
+            <th scope="col">Admin</th>
+            <th scope="col">Options</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr v-for="user in users" :key="user._id">
+            <th scope="row">{{ user._id }}</th>
+            <td>{{ user.name }}</td>
+            <td>{{ user.email }}</td>
+            <td>
+              <select @change="updateRole(user._id)" v-model="user.isAdmin">
+                <option value="true">true</option>
+                <option value="false">false</option>
+              </select>
+            </td>
+            <td>
+              <button @click="deleteUser(user._id)" class="btn btn-danger">
+                Delete
+              </button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <div v-else>
     <h2 class="text-center">No Token, Please Relog</h2>
@@ -45,7 +47,7 @@ export default {
   data() {
     return {
       users: [],
-      noAuth: false,
+      noAuth: true,
     };
   },
   methods: {
