@@ -8,7 +8,7 @@ MONGODB Connection: mongodb+srv://project:project@cluster1.5qnah.mongodb.net/lea
 
 <br/>
 Starten van client via: npm run dev<br/>
-
+<br/>
 Gemaakt door:<br />
 Naam: Jelle Toonen<br />
 Klas: INF2B<br />
