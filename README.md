@@ -6,6 +6,9 @@ URL: https://leaguer-vue.herokuapp.com/ <br />
 GITHUB SERVER: https://github.com/Nightfly-student/Leaguer-server <br />
 MONGODB Connection: mongodb+srv://project:project@cluster1.5qnah.mongodb.net/leaguer <br />
 
+<br/>
+Starten van client via: npm run dev
+
 Gemaakt door:<br />
 Naam: Jelle Toonen<br />
 Klas: INF2B<br />
