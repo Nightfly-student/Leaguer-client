@@ -7,6 +7,7 @@ GITHUB SERVER: https://github.com/Nightfly-student/Leaguer-server <br />
 MONGODB Connection: mongodb+srv://project:project@cluster1.5qnah.mongodb.net/leaguer <br />
 
 <br/>
+Download Packages via npm i<br/>
 Starten van client via: npm run dev<br/>
 <br/>
 Gemaakt door:<br />
