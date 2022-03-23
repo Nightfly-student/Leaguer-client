@@ -2,9 +2,9 @@
 
 Met dit project kan je de matches van spelers bekijken.
 
-URL: https://leaguer-vue.herokuapp.com/
-GITHUB SERVER: https://github.com/Nightfly-student/Leaguer-server
-MONGODB Connection: mongodb+srv://project:project@cluster1.5qnah.mongodb.net/leaguer
+URL: https://leaguer-vue.herokuapp.com/ <br />
+GITHUB SERVER: https://github.com/Nightfly-student/Leaguer-server <br />
+MONGODB Connection: mongodb+srv://project:project@cluster1.5qnah.mongodb.net/leaguer <br />
 
 Gemaakt door:<br />
 Naam: Jelle Toonen<br />
