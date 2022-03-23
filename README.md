@@ -25,8 +25,8 @@ of je kan er een registeren. Deze moet wel aan alle eisen voldoen...
 ## Summoner Informatie
 Als je niet weet wat je kan intypen in de search gebruik
 
-naam: lft nightfly
+naam: lft nightfly<br />
 region: euw
 
-naam: thebausffs
+naam: thebausffs<br />
 region euw
